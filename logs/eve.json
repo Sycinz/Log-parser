@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-01-06T19:31:03.330089+0100",
+  "flow_id": 1980625905789294,
+  "in_iface": "enp37s0",
+  "event_type": "alert",
+  "src_ip": "192.168.1.238",
+  "src_port": 53723,
+  "dest_ip": "192.168.1.1",
+  "dest_port": 53,
+  "proto": "UDP",
+  "ip_v": 4,
+  "pkt_src": "wire/pcap",
+  "tx_id": 1,
+  "alert": {
+    "action": "allowed",
+    "gid": 1,
+    "signature_id": 2027758,
+    "rev": 5,
+    "signature": "ET DNS Query for .cc TLD",
+    "category": "Potentially Bad Traffic",
+    "severity": 2,
+    "metadata": {
+      "affected_product": [
+        "Any"
+      ],
+      "attack_target": [
+        "Client_Endpoint"
+      ],
+      "confidence": [
+        "High"
+      ],
+      "created_at": [
+        "2019_07_26"
+      ],
+      "deployment": [
+        "Perimeter"
+      ],
+      "signature_severity": [
+        "Informational"
+      ],
+      "updated_at": [
+        "2020_09_17"
+      ]
+    }
+  },
+  "dns": {
+    "version": 3,
+    "type": "request",
+    "tx_id": 1,
+    "id": 43388,
+    "flags": "100",
+    "rd": true,
+    "opcode": 0,
+    "rcode": "NOERROR",
+    "queries": [
+      {
+        "rrname": "cda-hd.cc",
+        "rrtype": "AAAA"
+      }
+    ]
+  },
+  "app_proto": "dns",
+  "direction": "to_server",
+  "flow": {
+    "pkts_toserver": 2,
+    "pkts_toclient": 0,
+    "bytes_toserver": 138,
+    "bytes_toclient": 0,
+    "start": "2026-01-06T19:31:03.330078+0100",
+    "src_ip": "192.168.1.238",
+    "dest_ip": "192.168.1.1",
+    "src_port": 53723,
+    "dest_port": 53
+  }
+}
